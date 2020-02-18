@@ -1,20 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <div class="padding"> 
+ 
+   <div class="logo">
+     <ion-icon color="light"  name="sunny"></ion-icon>
+   </div>
+   <ion-item>
+     <ion-label color="light">Username</ion-label>
+     <ion-input color="light" [(ngModel)]="username" type="email"></ion-input>
+   </ion-item>
+ 
+   <ion-item>
+     <ion-label color="light">Mot de passe</ion-label>
+     <ion-input color="light" [(ngModel)]="password" type="password"></ion-input>
+   </ion-item>
+   
+   <ion-item lines = none>
+     <ion-button slot='end' fill='clear' color='light'>Mot de passe oublié ?</ion-button>
+   </ion-item>
+ </div>
+ 
+ <ion-button color="light" shape = "round" fill='outline' expand="block">Connexion</ion-button> <br>
+ 
+  <ion-button routerLink='/user-list' >redirect list</ion-button>
 </ion-content>
